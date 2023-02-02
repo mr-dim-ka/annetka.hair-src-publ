@@ -1,0 +1,32 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: inline-block;
+	background-color: $pinkColor;
+	box-shadow: 0px 22px 44px rgba(113, 22, 92, 0.3);
+	font-size: rem(18);
+	line-height: 1.8;
+	text-transform: uppercase;
+	text-align: center;
+	padding: rem(18) rem(66);
+	cursor: pointer;
+	transition: background-color 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #540842;
+		}
+	}
+	&_w {
+		border: 1px solid #fff;
+		background-color: transparent;
+		box-shadow: none;
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #540842;
+				border: 1px solid #540842;
+			}
+		}
+	}
+}
