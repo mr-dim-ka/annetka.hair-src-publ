@@ -35,8 +35,8 @@
 		flex: 1 1 auto;
 		display: flex;
 		flex-direction: column;
-		position: relative;
-		z-index: 2;
+		// position: relative;
+		// z-index: 2;
 	}
 
 	// .mainpage__body
@@ -66,14 +66,16 @@
 		display: flex;
 		gap: rem(35);
 		position: absolute;
-		bottom: rem(40);
-		left: 50%;
-		transform: translate(-50%, 0%);
 		@media (min-width: $mobileSmall) {
 			flex-direction: column;
 			top: 50%;
 			left: 0;
 			transform: translate(0%, -50%);
+		}
+		@media (max-width: $mobileSmall) {
+			bottom: rem(40);
+			left: 50%;
+			transform: translate(-50%, 0%);
 		}
 	}
 	// .mainpage__footer
