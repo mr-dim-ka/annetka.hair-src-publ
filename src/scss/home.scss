@@ -2,6 +2,7 @@
 .page {
 	// .page__mainpage
 	&__mainpage {
+		background-color: $blackColor;
 		position: relative;
 		@media (min-width: $mobile) {
 			&::before {
@@ -17,6 +18,11 @@
 	}
 	// .page__services
 	&__services {
+		@include adaptiveValue("padding-top", 75, 30);
+		@include adaptiveValue("padding-bottom", 75, 30);
+	}
+	// .page__masters
+	&__masters {
 		@include adaptiveValue("padding-top", 75, 30);
 		@include adaptiveValue("padding-bottom", 75, 30);
 	}
@@ -93,6 +99,7 @@
 	}
 	// .mainpage__street
 	&__street {
+		opacity: 0.6;
 	}
 	// .mainpage__phone
 	&__phone {
@@ -338,5 +345,180 @@
 		@media (max-width: $mobile) {
 			width: 100%;
 		}
+	}
+}
+
+//========================================================================================================================================================
+
+.masters {
+	// .masters__container
+	&__container {
+		// .masters__container_wide
+		&_wide {
+			max-width: rem(1520);
+		}
+	}
+	// .masters__title
+	&__title {
+		@extend %h2;
+		margin-bottom: rem(50);
+		@include adaptiveValue("margin-bottom", 50, 30);
+	}
+	// .masters__slider
+	&__slider {
+		@media (min-width: $tablet) {
+			@include adaptiveValue("padding-left", 60, 50, 1400, 992, 1);
+			@include adaptiveValue("padding-right", 60, 50, 1400, 992, 1);
+		}
+		position: relative;
+	}
+}
+.slider-masters {
+	// .slider-masters__slider
+	&__slider {
+	}
+	// .slider-masters__wrapper
+	&__wrapper {
+		&:not(:last-child) {
+			margin-bottom: rem(25);
+		}
+	}
+	// .slider-masters__slide
+	&__slide {
+	}
+	// .slider-masters__dotts
+	&__dotts {
+		display: none;
+		@media (max-width: $tablet) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: rem(17);
+			.swiper-pagination-bullet {
+				width: rem(8);
+				height: rem(8);
+				border-radius: 50%;
+				border: 1px solid #ffffff;
+				&.swiper-pagination-bullet-active {
+					border: 1px solid $pinkColor;
+					background-color: $pinkColor;
+				}
+			}
+		}
+	}
+	// .slider-masters__prev
+	&__prev {
+	}
+	// .slider-masters__next
+	&__next {
+	}
+	&__prev,
+	&__next {
+		display: none;
+		transition: all 0.3s ease 0s;
+		&.swiper-button-disabled {
+			background-color: transparent;
+			border: 1px solid #fff;
+			cursor: default;
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: transparent;
+				}
+			}
+		}
+		@media (min-width: $tablet) {
+			display: block;
+			background-color: $pinkColor;
+			width: rem(35);
+			height: rem(35);
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top: 50%;
+			transform: translate(0px, -50%);
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #930270;
+			}
+		}
+	}
+	// .slider-masters__prev
+	&__prev {
+		left: 0;
+	}
+	// .slider-masters__next
+	&__next {
+		right: 0;
+	}
+}
+.slide-masters-slider {
+	@media (any-hover: hover) {
+		&:hover {
+			.slide-masters-slider__img-ibg {
+				img {
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+	// .slide-masters-slider__img-ibg
+	&__img-ibg {
+		overflow: hidden;
+		padding-bottom: percent(382, 440);
+		img {
+			transition: all 0.6s ease 0s;
+		}
+	}
+	// .slide-masters-slider__body
+	&__body {
+		@include adaptiveValue("padding", 30, 15, 1400, 767, 1);
+		background-color: $blackColor;
+	}
+	// .slide-masters-slider__author
+	&__author {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: rem(10);
+		&:not(:last-child) {
+			margin-bottom: em(16, 16);
+		}
+	}
+	// .slide-masters-slider__name
+	&__name {
+		@extend %h3;
+	}
+	// .slide-masters-slider__name-link
+	&__name-link {
+		transition: all 0.3s ease 0s;
+		border-bottom: 1px solid transparent;
+		@media (any-hover: hover) {
+			&:hover {
+				border-bottom: 1px solid #fff;
+			}
+		}
+	}
+	// .slide-masters-slider__skill
+	&__skill {
+		color: #930270;
+		text-transform: uppercase;
+		&:not(:last-child) {
+			margin-bottom: em(16, 16);
+		}
+	}
+	// .slide-masters-slider__profession
+	&__profession {
+		opacity: 0.6;
+		&:not(:last-child) {
+			margin-bottom: em(16, 16);
+		}
+	}
+	// .slide-masters-slider__experience
+	&__experience {
+		opacity: 0.6;
 	}
 }

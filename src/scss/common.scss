@@ -6,7 +6,21 @@
 
 //========================================================================================================================================================
 
-.street {
+%h1 {
+	font-family: verahumana95;
+	@include adaptiveValue("font-size", 110, 40);
+	line-height: 1;
+	text-transform: uppercase;
 }
-.phone {
+%h2 {
+	font-family: verahumana95;
+	@include adaptiveValue("font-size", 52, 40);
+	line-height: 1.1;
+	text-transform: uppercase;
+}
+%h3 {
+	font-family: verahumana95;
+	font-size: rem(18);
+	line-height: 1.1;
+	text-transform: uppercase;
 }
