@@ -11,7 +11,9 @@
 	line-height: 1.8;
 	text-transform: uppercase;
 	text-align: center;
-	padding: rem(15) rem(66);
+	padding: rem(10) 0;
+	@include adaptiveValue("padding-left", 65, 40);
+	@include adaptiveValue("padding-right", 65, 40);
 	cursor: pointer;
 	transition: background-color 0.3s ease 0s;
 	@media (any-hover: hover) {
