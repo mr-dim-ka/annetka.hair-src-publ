@@ -27,9 +27,9 @@ import "../../scss/base/swiper.scss";
 function initSliders() {
 	// Перечень слайдеров
 	// Проверяем, есть ли слайдер на стронице
-	if (document.querySelector('.slider-masters__slider')) { // Указываем скласс нужного слайдера
+	if (document.querySelector('.common-slider')) { // Указываем скласс нужного слайдера
 		// Создаем слайдер
-		new Swiper('.slider-masters__slider', { // Указываем скласс нужного слайдера
+		new Swiper('.common-slider', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
 			modules: [Navigation, Pagination],
@@ -58,7 +58,7 @@ function initSliders() {
 			// Пагинация
 
 			pagination: {
-				el: '.slider-masters__dotts',
+				el: '.common-slider__dotts',
 				clickable: true,
 			},
 
@@ -73,8 +73,8 @@ function initSliders() {
 
 			// Кнопки "влево/вправо"
 			navigation: {
-				prevEl: '.slider-masters__prev',
-				nextEl: '.slider-masters__next',
+				prevEl: '.common-slider__prev',
+				nextEl: '.common-slider__next',
 			},
 
 			// Брейкпоинты
