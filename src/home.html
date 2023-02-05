@@ -1,293 +1,431 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-				<section class="page__mainpage mainpage">
-					<div data-fullscreen class="mainpage__container">
-						<div class="mainpage__inner">
-							<div class="mainpage__body">
-								<div class="mainpage__info info-mainpage">
-									<div class="info-mainpage__subtitle">Салон красоты премиум класса</div>
-									<h1 class="info-mainpage__title">Annetka.Hair</h1>
-									<div class="info-mainpage__text">
-										Annetka Hair - эксклюзивный салон красоты премиум класса, основная миссия которого - подарить Вам красивые волосы
-									</div>
-									<div class="info-mainpage__buttons">
-										<a class="info-mainpage__button button" href="">Записаться</a>
-										<a class="info-mainpage__button button button_w" href="">Наши услуги</a>
-									</div>
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="page__mainpage mainpage">
+				<div data-fullscreen class="mainpage__container">
+					<div class="mainpage__inner">
+						<div class="mainpage__body">
+							<div class="mainpage__info info-mainpage">
+								<div class="info-mainpage__subtitle">Салон красоты премиум класса</div>
+								<h1 class="info-mainpage__title">Annetka.Hair</h1>
+								<div class="info-mainpage__text">
+									Annetka Hair - эксклюзивный салон красоты премиум класса, основная миссия которого - подарить
+									Вам красивые волосы
 								</div>
-							</div>
-							<div class="mainpage__footer">
-								<a class="mainpage__street street" href="">Москва, м. Парк Победы, Улица 1812 года, дом 1</a>
-								<a class="mainpage__phone phone" href="tel:+79950992757">+7 (995) 099-27-57</a>
-							</div>
-							<div data-da=".menu__body, 479.98" class="mainpage__social social">
-								<div class="social__item">
-									<a href="" class="social__item-link social__item-link_intagram">in</a>
-								</div>
-								<div class="social__item">
-									<a href="" class="social__item-link social__item-link_vk">vk</a>
-								</div>
-								<div class="social__item">
-									<a href="" class="social__item-link social__item-link_facebook">fc</a>
+								<div class="info-mainpage__buttons">
+									<a class="info-mainpage__button button" href="">Записаться</a>
+									<a class="info-mainpage__button button button_w" href="">Наши услуги</a>
 								</div>
 							</div>
 						</div>
+						<div class="mainpage__footer">
+							<a class="mainpage__street street" href="">Москва, м. Парк Победы, Улица 1812 года, дом 1</a>
+							<a class="mainpage__phone phone" href="tel:+79950992757">+7 (995) 099-27-57</a>
+						</div>
+						<div data-da=".menu__body, 479.98" class="mainpage__social social">
+							<div class="social__item">
+								<a href="" class="social__item-link social__item-link_intagram">in</a>
+							</div>
+							<div class="social__item">
+								<a href="" class="social__item-link social__item-link_vk">vk</a>
+							</div>
+							<div class="social__item">
+								<a href="" class="social__item-link social__item-link_facebook">fc</a>
+							</div>
+						</div>
 					</div>
-					<div class="mainpage__image-ibg">
-						<img src="@img/mainpage/woman-main.jpg" alt="woman">
-					</div>
-				</section>
-				<section class="page__services services-module">
-					<div class="services-module__container">
-						<h2 class="services-module__title">услуги и цены</h2>
-						<div class="services-module__body">
-							<div class="services-module__tabs">
-								<div data-tabs="767.98" data-tabs-animate="500" class="tabs-services">
-									<nav data-tabs-titles class="tabs-services__navigation">
-										<button type="button" class="tabs-services__title _tab-active"><span>Стрижка</span></button>
-										<button type="button" class="tabs-services__title"><span>Укладка</span></button>
-										<button type="button" class="tabs-services__title"><span>Окрашивание</span></button>
-										<button type="button" class="tabs-services__title"><span>Уход</span></button>
-									</nav>
-									<div data-tabs-body class="tabs-services__content">
-										<div class="tabs-services__body body-tab-services">
-											<div class="body-tab-services__title">Стрижка</div>
-											<div class="body-tab-services__text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu quam platea adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac faucibus vitae.
+				</div>
+				<div class="mainpage__image-ibg">
+					<img src="@img/mainpage/woman-main.jpg" alt="woman">
+				</div>
+			</section>
+			<section class="page__services services-module">
+				<div class="services-module__container">
+					<h2 class="services-module__title title-section">услуги и цены</h2>
+					<div class="services-module__body">
+						<div class="services-module__tabs">
+							<div data-tabs="767.98" data-tabs-animate="500" class="tabs-services">
+								<nav data-tabs-titles class="tabs-services__navigation">
+									<button type="button" class="tabs-services__title _tab-active"><span>Стрижка</span></button>
+									<button type="button" class="tabs-services__title"><span>Укладка</span></button>
+									<button type="button" class="tabs-services__title"><span>Окрашивание</span></button>
+									<button type="button" class="tabs-services__title"><span>Уход</span></button>
+								</nav>
+								<div data-tabs-body class="tabs-services__content">
+									<div class="tabs-services__body body-tab-services">
+										<div class="body-tab-services__title">Стрижка</div>
+										<div class="body-tab-services__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu quam platea
+											adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac faucibus
+											vitae.
+										</div>
+										<div class="body-tab-services__body">
+											<div class="body-tab-services__line">
+												<div class="body-tab-services__info">Стрижка у стажера</div>
+												<div class="body-tab-services__price">1199 ₽</div>
 											</div>
-											<div class="body-tab-services__body">
-												<div class="body-tab-services__line">
-													<div class="body-tab-services__info">Стрижка у стажера</div>
-													<div class="body-tab-services__price">1199 ₽</div>
-												</div>
-												<div class="body-tab-services__line">
-													<div class="body-tab-services__info">Стрижка у мастера</div>
-													<div class="body-tab-services__price">2299 ₽</div>
-												</div>
-												<div class="body-tab-services__line">
-													<div class="body-tab-services__info">Стрижка у профи</div>
-													<div class="body-tab-services__price">3399 ₽</div>
-												</div>
+											<div class="body-tab-services__line">
+												<div class="body-tab-services__info">Стрижка у мастера</div>
+												<div class="body-tab-services__price">2299 ₽</div>
 											</div>
-											<div class="body-tab-services__buttons">
-												<a class="body-tab-services__button button" href="">Записаться</a>
-												<a class="body-tab-services__button button button_w" href="">Наши мастера</a>
+											<div class="body-tab-services__line">
+												<div class="body-tab-services__info">Стрижка у профи</div>
+												<div class="body-tab-services__price">3399 ₽</div>
 											</div>
 										</div>
-										<div class="tabs-services__body body-tab-services">
-											<div class="body-tab-services__title">Укладка</div>
-											<div class="body-tab-services__text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu quam platea adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac faucibus vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu quam platea adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac faucibus vitae.
+										<div class="body-tab-services__buttons">
+											<a class="body-tab-services__button button" href="">Записаться</a>
+											<a class="body-tab-services__button button button_w" href="">Наши мастера</a>
+										</div>
+									</div>
+									<div class="tabs-services__body body-tab-services">
+										<div class="body-tab-services__title">Укладка</div>
+										<div class="body-tab-services__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu quam platea
+											adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac faucibus
+											vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu quam
+											platea adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac
+											faucibus vitae.
+										</div>
+										<div class="body-tab-services__body">
+											<div class="body-tab-services__line">
+												<div class="body-tab-services__info">Укладка у стажера</div>
+												<div class="body-tab-services__price">1499 ₽</div>
 											</div>
-											<div class="body-tab-services__body">
-												<div class="body-tab-services__line">
-													<div class="body-tab-services__info">Укладка у стажера</div>
-													<div class="body-tab-services__price">1499 ₽</div>
-												</div>
-												<div class="body-tab-services__line">
-													<div class="body-tab-services__info">Укладка у мастера</div>
-													<div class="body-tab-services__price">2599 ₽</div>
-												</div>
-												<div class="body-tab-services__line">
-													<div class="body-tab-services__info">Укладка у профи</div>
-													<div class="body-tab-services__price">3699 ₽</div>
-												</div>
+											<div class="body-tab-services__line">
+												<div class="body-tab-services__info">Укладка у мастера</div>
+												<div class="body-tab-services__price">2599 ₽</div>
 											</div>
-											<div class="body-tab-services__buttons">
-												<a class="body-tab-services__button button" href="">Записаться</a>
-												<a class="body-tab-services__button button button_w" href="">Наши мастера</a>
+											<div class="body-tab-services__line">
+												<div class="body-tab-services__info">Укладка у профи</div>
+												<div class="body-tab-services__price">3699 ₽</div>
 											</div>
 										</div>
-										<div class="tabs-services__body body-tab-services">
-											<div class="body-tab-services__title">Окрашивание</div>
-											<div class="body-tab-services__text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu quam platea adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac faucibus vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu quam platea adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac faucibus vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu quam platea adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac faucibus vitae.
+										<div class="body-tab-services__buttons">
+											<a class="body-tab-services__button button" href="">Записаться</a>
+											<a class="body-tab-services__button button button_w" href="">Наши мастера</a>
+										</div>
+									</div>
+									<div class="tabs-services__body body-tab-services">
+										<div class="body-tab-services__title">Окрашивание</div>
+										<div class="body-tab-services__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu quam platea
+											adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac faucibus
+											vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu quam
+											platea adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac
+											faucibus vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu
+											quam platea adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac
+											faucibus vitae.
+										</div>
+										<div class="body-tab-services__body">
+											<div class="body-tab-services__line">
+												<div class="body-tab-services__info">Окрашивание у стажера</div>
+												<div class="body-tab-services__price">999 ₽</div>
 											</div>
-											<div class="body-tab-services__body">
-												<div class="body-tab-services__line">
-													<div class="body-tab-services__info">Окрашивание у стажера</div>
-													<div class="body-tab-services__price">999 ₽</div>
-												</div>
-												<div class="body-tab-services__line">
-													<div class="body-tab-services__info">Окрашивание у мастера</div>
-													<div class="body-tab-services__price">2899 ₽</div>
-												</div>
-												<div class="body-tab-services__line">
-													<div class="body-tab-services__info">Окрашивание у профи</div>
-													<div class="body-tab-services__price">3999 ₽</div>
-												</div>
+											<div class="body-tab-services__line">
+												<div class="body-tab-services__info">Окрашивание у мастера</div>
+												<div class="body-tab-services__price">2899 ₽</div>
 											</div>
-											<div class="body-tab-services__buttons">
-												<a class="body-tab-services__button button" href="">Записаться</a>
-												<a class="body-tab-services__button button button_w" href="">Наши мастера</a>
+											<div class="body-tab-services__line">
+												<div class="body-tab-services__info">Окрашивание у профи</div>
+												<div class="body-tab-services__price">3999 ₽</div>
 											</div>
 										</div>
-										<div class="tabs-services__body body-tab-services">
-											<div class="body-tab-services__title">Уход</div>
-											<div class="body-tab-services__text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu quam platea adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac faucibus vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu quam platea adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac faucibus vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu quam platea adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac faucibus vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu quam platea adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac faucibus vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu quam platea adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac faucibus vitae.
+										<div class="body-tab-services__buttons">
+											<a class="body-tab-services__button button" href="">Записаться</a>
+											<a class="body-tab-services__button button button_w" href="">Наши мастера</a>
+										</div>
+									</div>
+									<div class="tabs-services__body body-tab-services">
+										<div class="body-tab-services__title">Уход</div>
+										<div class="body-tab-services__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu quam platea
+											adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac faucibus
+											vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu quam
+											platea adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac
+											faucibus vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu
+											quam platea adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac
+											faucibus vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu
+											quam platea adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac
+											faucibus vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lorem arcu
+											quam platea adipiscing sed lacus. Cursus mattis aenean viverra accumsan. Amet velit ac
+											faucibus vitae.
+										</div>
+										<div class="body-tab-services__body">
+											<div class="body-tab-services__line">
+												<div class="body-tab-services__info">Уход у стажера</div>
+												<div class="body-tab-services__price">399 ₽</div>
 											</div>
-											<div class="body-tab-services__body">
-												<div class="body-tab-services__line">
-													<div class="body-tab-services__info">Уход у стажера</div>
-													<div class="body-tab-services__price">399 ₽</div>
-												</div>
-												<div class="body-tab-services__line">
-													<div class="body-tab-services__info">Уход у мастера</div>
-													<div class="body-tab-services__price">399 ₽</div>
-												</div>
-												<div class="body-tab-services__line">
-													<div class="body-tab-services__info">Уход у профи</div>
-													<div class="body-tab-services__price">999 ₽</div>
-												</div>
+											<div class="body-tab-services__line">
+												<div class="body-tab-services__info">Уход у мастера</div>
+												<div class="body-tab-services__price">399 ₽</div>
 											</div>
-											<div class="body-tab-services__buttons">
-												<a class="body-tab-services__button button" href="">Записаться</a>
-												<a class="body-tab-services__button button button_w" href="">Наши мастера</a>
+											<div class="body-tab-services__line">
+												<div class="body-tab-services__info">Уход у профи</div>
+												<div class="body-tab-services__price">999 ₽</div>
 											</div>
+										</div>
+										<div class="body-tab-services__buttons">
+											<a class="body-tab-services__button button" href="">Записаться</a>
+											<a class="body-tab-services__button button button_w" href="">Наши мастера</a>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="services-module__images">
-								<img src="@img/services/woman.jpg" alt="woman">
-							</div>
+						</div>
+						<div class="services-module__images">
+							<img src="@img/services/woman.jpg" alt="woman">
 						</div>
 					</div>
-				</section>
-				<section class="page__masters masters">
-					<div class="masters__container">
-						<h2 class="masters__title">мастера</h2>
-					</div>
-					<div class="masters__container masters__container_wide">
-						<div class="masters__slider">
-							<div class="common-slider swiper">
-								<div class="common-slider__wrapper swiper-wrapper">
-									<div class="common-slider__slide swiper-slide">
-										<div class="slide-common-slider">
-											<div class="slide-common-slider__img-ibg">
-												<img src="@img/masters/01.jpg" alt="картинка">
-											</div>
-											<div class="slide-common-slider__body">
-												<div class="slide-common-slider__author">
-													<div class="slide-common-slider__name">
-														<a class="slide-common-slider__name-link" href="#">Анна астахова</a>
-													</div>
-													<div class="slide-common-slider__skill">Мастер</div>
-												</div>
-												<div class="slide-common-slider__profession">- Парикмахер-стилист</div>
-												<div class="slide-common-slider__experience">- Опыт более 5 лет</div>
-											</div>
+				</div>
+			</section>
+			<section class="page__masters masters">
+				<div class="masters__container">
+					<h2 class="masters__title title-section">мастера</h2>
+				</div>
+				<div class="masters__container masters__container_wide">
+					<div class="masters__slider">
+						<div class="common-slider swiper">
+							<div class="common-slider__wrapper swiper-wrapper">
+								<div class="common-slider__slide swiper-slide">
+									<div class="slide-common-slider">
+										<div class="slide-common-slider__img-ibg">
+											<img src="@img/masters/01.jpg" alt="картинка">
 										</div>
-									</div>
-									<div class="common-slider__slide swiper-slide">
-										<div class="slide-common-slider">
-											<div class="slide-common-slider__img-ibg">
-												<img src="@img/masters/01.jpg" alt="картинка">
-											</div>
-											<div class="slide-common-slider__body">
-												<div class="slide-common-slider__author">
-													<div class="slide-common-slider__name">
-														<a class="slide-common-slider__name-link" href="#">Анна астахова</a>
-													</div>
-													<div class="slide-common-slider__skill">Мастер</div>
+										<div class="slide-common-slider__body">
+											<div class="slide-common-slider__author">
+												<div class="slide-common-slider__name">
+													<a class="slide-common-slider__name-link" href="#">Анна астахова</a>
 												</div>
-												<div class="slide-common-slider__profession">- Парикмахер-стилист</div>
-												<div class="slide-common-slider__experience">- Опыт более 5 лет</div>
+												<div class="slide-common-slider__skill">Мастер</div>
 											</div>
-										</div>
-									</div>
-									<div class="common-slider__slide swiper-slide">
-										<div class="slide-common-slider">
-											<div class="slide-common-slider__img-ibg">
-												<img src="@img/masters/01.jpg" alt="картинка">
-											</div>
-											<div class="slide-common-slider__body">
-												<div class="slide-common-slider__author">
-													<div class="slide-common-slider__name">
-														<a class="slide-common-slider__name-link" href="#">Анна астахова</a>
-													</div>
-													<div class="slide-common-slider__skill">Мастер</div>
-												</div>
-												<div class="slide-common-slider__profession">- Парикмахер-стилист</div>
-												<div class="slide-common-slider__experience">- Опыт более 5 лет</div>
-											</div>
-										</div>
-									</div>
-									<div class="common-slider__slide swiper-slide">
-										<div class="slide-common-slider">
-											<div class="slide-common-slider__img-ibg">
-												<img src="@img/masters/01.jpg" alt="картинка">
-											</div>
-											<div class="slide-common-slider__body">
-												<div class="slide-common-slider__author">
-													<div class="slide-common-slider__name">
-														<a class="slide-common-slider__name-link" href="#">Анна астахова</a>
-													</div>
-													<div class="slide-common-slider__skill">Мастер</div>
-												</div>
-												<div class="slide-common-slider__profession">- Парикмахер-стилист</div>
-												<div class="slide-common-slider__experience">- Опыт более 5 лет</div>
-											</div>
-										</div>
-									</div>
-									<div class="common-slider__slide swiper-slide">
-										<div class="slide-common-slider">
-											<div class="slide-common-slider__img-ibg">
-												<img src="@img/masters/01.jpg" alt="картинка">
-											</div>
-											<div class="slide-common-slider__body">
-												<div class="slide-common-slider__author">
-													<div class="slide-common-slider__name">
-														<a class="slide-common-slider__name-link" href="#">Анна астахова</a>
-													</div>
-													<div class="slide-common-slider__skill">Мастер</div>
-												</div>
-												<div class="slide-common-slider__profession">- Парикмахер-стилист</div>
-												<div class="slide-common-slider__experience">- Опыт более 5 лет</div>
-											</div>
-										</div>
-									</div>
-									<div class="common-slider__slide swiper-slide">
-										<div class="slide-common-slider">
-											<div class="slide-common-slider__img-ibg">
-												<img src="@img/masters/01.jpg" alt="картинка">
-											</div>
-											<div class="slide-common-slider__body">
-												<div class="slide-common-slider__author">
-													<div class="slide-common-slider__name">
-														<a class="slide-common-slider__name-link" href="#">Анна астахова</a>
-													</div>
-													<div class="slide-common-slider__skill">Мастер</div>
-												</div>
-												<div class="slide-common-slider__profession">- Парикмахер-стилист</div>
-												<div class="slide-common-slider__experience">- Опыт более 5 лет</div>
-											</div>
+											<div class="slide-common-slider__profession">- Парикмахер-стилист</div>
+											<div class="slide-common-slider__experience">- Опыт более 5 лет</div>
 										</div>
 									</div>
 								</div>
-								<div class="common-slider__dotts swiper-pagination"></div>
-								<button type="button" class="common-slider__prev swiper-button-prev">
-									<img src="@img/icons/arrow-left.svg" alt="">
-								</button>
-								<button type="button" class="common-slider__next swiper-button-next">
-									<img src="@img/icons/arrow-right.svg" alt="">
-								</button>
+								<div class="common-slider__slide swiper-slide">
+									<div class="slide-common-slider">
+										<div class="slide-common-slider__img-ibg">
+											<img src="@img/masters/01.jpg" alt="картинка">
+										</div>
+										<div class="slide-common-slider__body">
+											<div class="slide-common-slider__author">
+												<div class="slide-common-slider__name">
+													<a class="slide-common-slider__name-link" href="#">Анна астахова</a>
+												</div>
+												<div class="slide-common-slider__skill">Мастер</div>
+											</div>
+											<div class="slide-common-slider__profession">- Парикмахер-стилист</div>
+											<div class="slide-common-slider__experience">- Опыт более 5 лет</div>
+										</div>
+									</div>
+								</div>
+								<div class="common-slider__slide swiper-slide">
+									<div class="slide-common-slider">
+										<div class="slide-common-slider__img-ibg">
+											<img src="@img/masters/01.jpg" alt="картинка">
+										</div>
+										<div class="slide-common-slider__body">
+											<div class="slide-common-slider__author">
+												<div class="slide-common-slider__name">
+													<a class="slide-common-slider__name-link" href="#">Анна астахова</a>
+												</div>
+												<div class="slide-common-slider__skill">Мастер</div>
+											</div>
+											<div class="slide-common-slider__profession">- Парикмахер-стилист</div>
+											<div class="slide-common-slider__experience">- Опыт более 5 лет</div>
+										</div>
+									</div>
+								</div>
+								<div class="common-slider__slide swiper-slide">
+									<div class="slide-common-slider">
+										<div class="slide-common-slider__img-ibg">
+											<img src="@img/masters/01.jpg" alt="картинка">
+										</div>
+										<div class="slide-common-slider__body">
+											<div class="slide-common-slider__author">
+												<div class="slide-common-slider__name">
+													<a class="slide-common-slider__name-link" href="#">Анна астахова</a>
+												</div>
+												<div class="slide-common-slider__skill">Мастер</div>
+											</div>
+											<div class="slide-common-slider__profession">- Парикмахер-стилист</div>
+											<div class="slide-common-slider__experience">- Опыт более 5 лет</div>
+										</div>
+									</div>
+								</div>
+								<div class="common-slider__slide swiper-slide">
+									<div class="slide-common-slider">
+										<div class="slide-common-slider__img-ibg">
+											<img src="@img/masters/01.jpg" alt="картинка">
+										</div>
+										<div class="slide-common-slider__body">
+											<div class="slide-common-slider__author">
+												<div class="slide-common-slider__name">
+													<a class="slide-common-slider__name-link" href="#">Анна астахова</a>
+												</div>
+												<div class="slide-common-slider__skill">Мастер</div>
+											</div>
+											<div class="slide-common-slider__profession">- Парикмахер-стилист</div>
+											<div class="slide-common-slider__experience">- Опыт более 5 лет</div>
+										</div>
+									</div>
+								</div>
+								<div class="common-slider__slide swiper-slide">
+									<div class="slide-common-slider">
+										<div class="slide-common-slider__img-ibg">
+											<img src="@img/masters/01.jpg" alt="картинка">
+										</div>
+										<div class="slide-common-slider__body">
+											<div class="slide-common-slider__author">
+												<div class="slide-common-slider__name">
+													<a class="slide-common-slider__name-link" href="#">Анна астахова</a>
+												</div>
+												<div class="slide-common-slider__skill">Мастер</div>
+											</div>
+											<div class="slide-common-slider__profession">- Парикмахер-стилист</div>
+											<div class="slide-common-slider__experience">- Опыт более 5 лет</div>
+										</div>
+									</div>
+								</div>
 							</div>
+							<div class="common-slider__dotts swiper-pagination"></div>
+							<button type="button" class="common-slider__prev swiper-button-prev">
+								<img src="@img/icons/arrow-left.svg" alt="">
+							</button>
+							<button type="button" class="common-slider__next swiper-button-next">
+								<img src="@img/icons/arrow-right.svg" alt="">
+							</button>
 						</div>
 					</div>
-				</section>
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+				</div>
+			</section>
+			<section class="page__reviews reviews">
+				<div class="reviews__container">
+					<h2 class="reviews__title title-section">отзывы клиентов</h2>
+				</div>
+				<div class="reviews__container reviews__container_wide">
+					<div class="reviews__slider">
+						<div class="common-slider swiper">
+							<div class="common-slider__wrapper swiper-wrapper">
+								<div class="common-slider__slide swiper-slide">
+									<div class="slide-common-slider">
+										<div class="slide-common-slider__img-ibg">
+											<img src="@img/reviews/01.jpg" alt="картинка">
+										</div>
+									</div>
+								</div>
+								<div class="common-slider__slide swiper-slide">
+									<div class="slide-common-slider">
+										<div class="slide-common-slider__img-ibg">
+											<img src="@img/reviews/01.jpg" alt="картинка">
+										</div>
+									</div>
+								</div>
+								<div class="common-slider__slide swiper-slide">
+									<div class="slide-common-slider">
+										<div class="slide-common-slider__img-ibg">
+											<img src="@img/reviews/01.jpg" alt="картинка">
+										</div>
+									</div>
+								</div>
+								<div class="common-slider__slide swiper-slide">
+									<div class="slide-common-slider">
+										<div class="slide-common-slider__img-ibg">
+											<img src="@img/reviews/01.jpg" alt="картинка">
+										</div>
+									</div>
+								</div>
+								<div class="common-slider__slide swiper-slide">
+									<div class="slide-common-slider">
+										<div class="slide-common-slider__img-ibg">
+											<img src="@img/reviews/01.jpg" alt="картинка">
+										</div>
+									</div>
+								</div>
+								<div class="common-slider__slide swiper-slide">
+									<div class="slide-common-slider">
+										<div class="slide-common-slider__img-ibg">
+											<img src="@img/reviews/01.jpg" alt="картинка">
+										</div>
+									</div>
+								</div>
+								<div class="common-slider__slide swiper-slide">
+									<div class="slide-common-slider">
+										<div class="slide-common-slider__img-ibg">
+											<img src="@img/reviews/01.jpg" alt="картинка">
+										</div>
+									</div>
+								</div>
+								<div class="common-slider__slide swiper-slide">
+									<div class="slide-common-slider">
+										<div class="slide-common-slider__img-ibg">
+											<img src="@img/reviews/01.jpg" alt="картинка">
+										</div>
+									</div>
+								</div>
+								<div class="common-slider__slide swiper-slide">
+									<div class="slide-common-slider">
+										<div class="slide-common-slider__img-ibg">
+											<img src="@img/reviews/01.jpg" alt="картинка">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="common-slider__dotts swiper-pagination"></div>
+							<button type="button" class="common-slider__prev swiper-button-prev">
+								<img src="@img/icons/arrow-left.svg" alt="">
+							</button>
+							<button type="button" class="common-slider__next swiper-button-next">
+								<img src="@img/icons/arrow-right.svg" alt="">
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__works works">
+				<div class="works__container">
+					<h2 class="works__title title-section">Наши работы</h2>
+					<div class="works__text">
+						- Больше работ у нас в <a class="works__link" href="#">instagram</a>
+					</div>
+					<div class="works__gallery">
+						<div data-gallery class="gallery-works">
+							<a href="@img/gallery/full/01.jpg" class="gallery-works__image-ibg">
+								<img class="gallery-works__preview" data-src="@img/gallery/thumbs/01.jpg" alt="Картинка">
+							</a>
+							<a href="@img/gallery/full/02.jpg" class="gallery-works__image-ibg">
+								<img class="gallery-works__preview" data-src="@img/gallery/thumbs/02.jpg" alt="Картинка">
+							</a>
+							<a href="@img/gallery/full/03.jpg" class="gallery-works__image-ibg">
+								<img class="gallery-works__preview" data-src="@img/gallery/thumbs/03.jpg" alt="Картинка">
+							</a>
+							<a href="@img/gallery/full/04.jpg" class="gallery-works__image-ibg">
+								<img class="gallery-works__preview" data-src="@img/gallery/thumbs/04.jpg" alt="Картинка">
+							</a>
+							<a href="@img/gallery/full/05.jpg" class="gallery-works__image-ibg">
+								<img class="gallery-works__preview" data-src="@img/gallery/thumbs/05.jpg" alt="Картинка">
+							</a>
+							<a href="@img/gallery/full/06.jpg" class="gallery-works__image-ibg">
+								<img class="gallery-works__preview" data-src="@img/gallery/thumbs/06.jpg" alt="Картинка">
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
 </html>

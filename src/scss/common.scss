@@ -14,7 +14,7 @@
 }
 %h2 {
 	font-family: verahumana95;
-	@include adaptiveValue("font-size", 52, 40);
+	@include adaptiveValue("font-size", 52, 36);
 	line-height: 1.1;
 	text-transform: uppercase;
 }
@@ -25,6 +25,12 @@
 	text-transform: uppercase;
 }
 
+//========================================================================================================================================================
+.title-section {
+	@extend %h2;
+	margin-bottom: rem(50);
+	@include adaptiveValue("margin-bottom", 50, 30);
+}
 //========================================================================================================================================================
 
 .slide-common-slider {
