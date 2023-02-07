@@ -1,10 +1,42 @@
-<!-- <div id="popup" aria-hidden="true" class="popup">
+<div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__close">
+				<button data-close type="button" class="btn-close"></button>
+			</div>
 			<div class="popup__text">
-				Text
+				<form class="popup__form form-contact" action="#">
+					<!-- <div class="form-contact__line">
+							<label class="form-contact__label" for="form-email">E-mail</label>
+							<input id="form-email" class="form-contact__input" autocomplete="off" type="text" name="form[]" data-required="email" data-error="Ошибка" data-value="">
+						</div> -->
+					<div class="form-contact__line">
+						<label class="form-contact__label" for="form-phone">Контактный телефон</label>
+						<input id="form-phone" class="form-contact__input" autocomplete="off" type="text" name="form[]" data-required="tel" data-error="Ошибка" data-value="">
+					</div>
+					<div class="form-contact__line">
+						<label class="form-contact__label" for="form-fio">ФИО</label>
+						<input id="form-fio" class="form-contact__input" autocomplete="off" type="text" name="form[]" data-required="" data-error="Ошибка" data-value="">
+					</div>
+					<div class="form-contact__line">
+						<label class="form-contact__label" for="form-service">Услуга</label>
+						<select class="form-contact__select" id="form-service" name="form[]" data-class-modif="form" multiple data-tags>
+							<option value="1" selected>Пункт №1</option>
+							<option value="2">Пункт №2</option>
+							<option value="3">Пункт №3</option>
+							<option value="4">Пункт №4</option>
+						</select>
+					</div>
+					<div class="form-contact__line form-contact__line_area">
+						<label class="form-contact__label" for="form-message">Сообщение</label>
+						<textarea id="form-message" class="form-contact__area" autocomplete="off" name="form[]" data-value="" data-error="Ошибка" data-autoheight></textarea>
+					</div>
+					<div class="form-contact__line form-contact__line_buttons">
+						<button class="form-contact__button button" type="submit">Записаться</button>
+						<button class="form-contact__button button button_w" type="reset">Очистить</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
-</div> -->
+</div>

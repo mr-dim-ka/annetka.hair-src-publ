@@ -183,8 +183,15 @@
 	}
 	// .menu-footer__link
 	&__link {
+		border-bottom: 1px solid transparent;
+		transition: all 0.3s ease 0s;
 		@media (max-width: $mobileSmall) {
 			font-size: 20px;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				border-bottom: 1px solid #fff;
+			}
 		}
 	}
 }

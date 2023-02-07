@@ -10,8 +10,8 @@
 	&__title {
 		color: inherit;
 		text-align: left;
-		border: 1px solid #d9d9d9;
-		background-color: #fff;
+		border: 1px solid #fff;
+		background-color: $darkGreyColor;
 		cursor: pointer;
 		width: 100%;
 		border-radius: 4px;
@@ -20,7 +20,7 @@
 	&__value {
 		display: flex;
 		align-items: center;
-		height: rem(30);
+		height: rem(40);
 		padding: 0 rem(15);
 		gap: rem(10);
 		> * {
@@ -28,7 +28,11 @@
 		}
 		&:after {
 			content: "";
-			align-self: stretch;
+			border: 0 solid transparent;
+			border-left-width: 7px;
+			border-right-width: 7px;
+			border-top: 7px solid #fff;
+			// align-self: stretch;
 			flex: 0 0 10px;
 			transition: all 0.3s ease 0s;
 			display: flex;
@@ -56,15 +60,15 @@
 	}
 	// .select__options
 	&__options {
-		color: #000;
+		color: #fff;
 		position: absolute;
-		top: 29px;
+		top: 39px;
 		border-radius: 0 0 4px 4px;
 		min-width: 100%;
 		left: 0;
-		background-color: #fff;
+		background-color: $darkGreyColor;
 		border-top: 0;
-		border: 1px solid #d9d9d9;
+		border: 1px solid #fff;
 		border-top: 0;
 		padding: 10px 0px 5px 0px;
 	}
@@ -89,11 +93,11 @@
 		padding: 5px 15px;
 		color: inherit;
 		&._select-selected {
-			background-color: #eee;
+			background-color: #930270;
 		}
 		@media (any-hover: hover) {
 			&:hover {
-				background: #d9d9d9;
+				background: $pinkColor;
 			}
 		}
 	}
