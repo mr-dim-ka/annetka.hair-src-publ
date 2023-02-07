@@ -31,10 +31,22 @@
 		@include adaptiveValue("padding-bottom", 75, 30);
 	}
 
+	// .page__reviews
+	&__reviews {
+		@include adaptiveValue("padding-top", 75, 30);
+		@include adaptiveValue("padding-bottom", 75, 30);
+	}
+
 	// .page__works
 	&__works {
 		@include adaptiveValue("padding-top", 75, 30);
 		@include adaptiveValue("padding-bottom", 75, 30);
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 75, 30);
+		}
+	}
+	// .page__product
+	&__product {
 	}
 }
 
@@ -89,9 +101,6 @@
 
 	// .mainpage__social
 	&__social {
-		@extend %ff-vera;
-		font-size: rem(20);
-		text-transform: uppercase;
 		display: flex;
 		gap: rem(35);
 		position: absolute;
@@ -539,3 +548,65 @@
 }
 
 //========================================================================================================================================================
+
+.product-module {
+	background: url("@img/product/product-bg.jpg") center / cover no-repeat fixed;
+	display: flex;
+	// .product-module__container
+	&__container {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding-top: rem(20);
+		padding-bottom: rem(20);
+	}
+	// .product-module__body
+	&__body {
+		background-color: rgba($darkGreyColor, 0.8);
+		@include adaptiveValue("padding-top", 50, 20);
+		@include adaptiveValue("padding-bottom", 50, 20);
+		@include adaptiveValue("padding-left", 35, 20);
+		@include adaptiveValue("padding-right", 35, 20);
+		@media (min-width: $mobile) {
+			max-width: rem(505);
+		}
+	}
+	// .product-module__title
+	&__title {
+		@extend %h2;
+		&:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+	}
+	// .product-module__text
+	&__text {
+		line-height: 1.6;
+		&:not(:last-child) {
+			margin-bottom: em(30, 16);
+		}
+	}
+	// .product-module__buttons
+	&__buttons {
+		display: flex;
+		flex-direction: column;
+		row-gap: rem(20);
+	}
+	// .product-module__button
+	&__button {
+		display: block;
+		@include adaptiveValue("font-size", 18, 15);
+		text-transform: uppercase;
+		text-align: center;
+		padding: rem(20);
+		// .product-module__button_ozon
+		&_ozon {
+			background-color: #1b1bf8;
+		}
+		// .product-module__button_wb
+		&_wb {
+			background: linear-gradient(91.29deg, #cb11ab 2.31%, #5f2a87 95.78%);
+		}
+	}
+}
