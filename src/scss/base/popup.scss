@@ -143,6 +143,9 @@ body::after {
 		&:not(:last-child) {
 			margin-bottom: em(10, 18);
 		}
+		span {
+			color: rgb(233, 60, 60);
+		}
 	}
 	// .form-contact__input
 	&__input {
@@ -172,6 +175,16 @@ body::after {
 		resize: vertical;
 		min-height: rem(100);
 	}
+
+	// .form-contact__req-info
+	&__req-info {
+		font-size: rem(14);
+		span {
+			font-size: rem(18);
+			color: rgb(233, 60, 60);
+		}
+	}
+
 	// .form-contact__button
 	&__button {
 		@media (max-width: $mobileSmall) {
