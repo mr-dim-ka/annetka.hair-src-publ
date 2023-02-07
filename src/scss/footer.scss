@@ -7,6 +7,7 @@
 	&__top {
 		@include adaptiveValue("padding-top", 100, 30);
 		@include adaptiveValue("padding-bottom", 100, 30);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	}
 	// .footer__bottom
 	&__bottom {
@@ -15,7 +16,6 @@
 	}
 }
 .top-footer {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	// .top-footer__items
 	&__items {
 		display: grid;
@@ -59,6 +59,9 @@
 	&__time {
 		p {
 			opacity: 0.6;
+			&:not(:last-child) {
+				margin-bottom: em(8, 16);
+			}
 		}
 	}
 	// .contacts-footer__social

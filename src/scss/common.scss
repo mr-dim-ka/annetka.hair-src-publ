@@ -30,6 +30,9 @@
 	@extend %h2;
 	margin-bottom: rem(50);
 	@include adaptiveValue("margin-bottom", 50, 30);
+	&._watcher-view {
+		animation: slide-left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	}
 }
 //========================================================================================================================================================
 
@@ -111,6 +114,20 @@
 	}
 	// .common-slider__slide
 	&__slide {
+		.loaded & {
+			&._watcher-view {
+				@for $var from 1 to 4 {
+					$delay: $var * 0.2;
+					&:nth-child(#{$var}) {
+						@if $var==1 {
+							animation: scale-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s both;
+						} @else {
+							animation: scale-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) #{$delay + s} both;
+						}
+					}
+				}
+			}
+		}
 	}
 	// .common-slider__dotts
 	&__dotts {
@@ -180,12 +197,23 @@
 .social {
 	// .social__item
 	&__item {
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
 	}
 	// .social__item-link
 	&__item-link {
 		@extend %ff-vera;
 		font-size: rem(20);
 		text-transform: uppercase;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #eee;
+			}
+		}
 		// .social__item-link_intagram
 		&_intagram {
 		}
@@ -202,4 +230,85 @@
 
 .title-footer {
 	@extend %h3;
+}
+
+//========================================================================================================================================================
+// Анимация
+
+// animation: slide-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+@keyframes slide-left {
+	0% {
+		transform: translateX(-800px) rotateY(30deg) scale(0);
+		transform-origin: -100% 50%;
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0) rotateY(0) scale(1);
+		transform-origin: 1800px 50%;
+		opacity: 1;
+	}
+}
+
+// animation: slide-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+@keyframes slide-top {
+	0% {
+		transform: translateY(-600px) rotateX(-30deg) scale(0);
+		transform-origin: 50% 100%;
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0) rotateX(0) scale(1);
+		transform-origin: 50% 1400px;
+		opacity: 1;
+	}
+}
+
+// animation: roll-in-left 0.6s ease-out both;
+@keyframes roll-in-left {
+	0% {
+		transform: translateX(-800px) rotate(-540deg);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0) rotate(0deg);
+		opacity: 1;
+	}
+}
+
+// animation: roll-in-bottom 0.6s ease-out both;
+@keyframes roll-in-bottom {
+	0% {
+		transform: translateY(800px) rotate(540deg);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+}
+
+// animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) 0.2s both;
+@keyframes puff-in-center {
+	0% {
+		transform: scale(2);
+		filter: blur(4px);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1);
+		filter: blur(0px);
+		opacity: 1;
+	}
+}
+
+// animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+@keyframes scale-in-center {
+	0% {
+		transform: scale(0);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
 }
