@@ -291,7 +291,9 @@
 	@include adaptiveValue("gap", 40, 20, 1400, 767, 1);
 
 	@media (min-width: $mobile) {
-		grid-template-columns: 1fr auto;
+		// grid-template-columns: 1fr auto;
+		// grid-template-columns: minmax(rem(290), 1fr) 1fr;
+		grid-template-columns: minmax(percent(400, 1400), percent(500, 1400)) 1fr;
 	}
 
 	// .tabs-services__navigation
@@ -327,6 +329,7 @@
 			height: rem(16);
 			background: url("@img/icons/close.svg") 0 0 no-repeat;
 			transition: all 0.5s ease 0s;
+			transform: rotate(-45deg);
 
 			@media (max-width: $mobile) {
 				top: rem(20);
@@ -342,7 +345,7 @@
 		&._tab-active {
 			&::before {
 				content: "";
-				transform: rotate(-45deg);
+				transform: rotate(0deg);
 			}
 		}
 	}
